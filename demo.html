@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /**
+     * Created by Administrator on 2016/12/22.
+     */
+   /* var timeout = true; //启动及关闭按钮
+    var timeout = false; //启动及关闭按钮
+    var a,b;
+    function  demo1(){
+        console.log(1);
+        if(timeout) {
+            a = setTimeout(demo1,100);
+            b = setTimeout(demo2,100);
+        }
+        clearTimeout(1)
+    }
+    function demo2(){
+        console.info(2);
+    }
+
+    demo1();*/
+
+    var a = setTimeout(demo1,100);
+    a = null;
+    a = setTimeout(demo2,100);
+    for(var a =0 ; a<3;a++){
+    }
+    function demo1(){
+        console.log(1);
+    }
+    function demo2(){
+        console.info(2);
+    }
+    console.dir(setTimeout);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvasDemo</title>
+    <style>
+        #canvas{
+            margin:0 auto;
+            display: block;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body onload="drawImg()"> <!-- 全部加载完毕调用drawImg方法-->
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <img id="oImg" src="img/1.jpg" alt="">
+    <script>
+        var can = document.getElementById("canvas");
+        var ctx = can.getContext("2d"); // can绘制2d图片 , 这个方法紧写在canvas元素后面,否则不成功
+        var oImg = new Image() ;// 创建一个图片对象
+        oImg.src = "img/1.jpg";
+        oImg.onload = drawImg() ; // 图片加载后执行drawImg()方法
+//        var oImg = document.getElementById("oImg");   不new一个Image对象则直接获取html文档上的img标签也可以
+        function drawImg(){
+            // canvas的左上角为00点
+            ctx.drawImage(oImg,0,0) ; // 绘制图片的方法: 图片 坐标 宽高,宽高默认则可以省略
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body, p, dl, dd, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend {
+    margin: 0;
+}
+ul,li,ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.clearfix{
+	zoom:1;
+}
+.clearfix:after{
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+}
+
+/*--------------*/
+
+#box1{
+	width: 1000px;
+	margin: 0 auto;
+}
+#box1>li{
+	width: 24%;
+	float: left;
+	box-sizing: border-box;
+	margin: 5px;
+	box-shadow: 0px 0px 2px 1px #B7B7B7;
+	padding: 5px;
+}
+#box1>li>img{
+	width: 100%;
+	margin: 5px 0;
+	transition: all 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
