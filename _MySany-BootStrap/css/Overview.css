@@ -1,0 +1,153 @@
+em,i{
+    font-style: normal;
+}
+li{
+    list-style: none;
+}
+
+header{
+    background: red;
+    border:0;
+}
+nav{
+    background: red;
+    border: 0;
+}
+.nav-logo{
+    padding: 0;
+}
+.nav-logo i{
+    width: 80px;
+    height: 100%;
+    display: inline-block;
+    background: url("../images/top_logo.jpg") no-repeat;
+    background-position: 1px -25px;
+    background-size: 437px 94px;
+}
+#example-navbar-collapse{
+    background: #ff3333;
+}
+#example-navbar-collapse a{
+    color: white;
+}
+#example-navbar-collapse li ul a{
+    color: black;
+}
+#example-navbar-collapse {
+    min-width: 1300px;
+}
+
+
+.section-left-img ul{
+    margin-bottom: 20px;
+    border: 1px solid #dae1ed;
+    border-bottom: 0;
+    width: 100%;
+}
+.section-left-img ul li{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #dae1ed;
+}
+.section-left-img ul li a:hover{
+    color: red;
+}
+.img1{
+    width: 100%;
+}
+.img2{
+    width: 100%;
+    border:none;
+}
+
+
+.borderBox{
+    border-right: 1px dotted gray;
+    padding: 20px;
+}
+.borderBox-top{
+    border-bottom: 2px solid #e6eaf6;
+    line-height: 31px;
+    height:31px;
+    margin-bottom: 17px;
+    padding-bottom: 7px;
+}
+.borderBox-top span{
+    padding: 0 4px;
+    border-left:2px solid #dae0ec;
+    border-right:2px solid #3b568b;
+    color: #3b568b;
+}
+.borderBox-top i{
+    color: #c5c0d4;
+}
+section .borderBox-top img{
+    float: right;
+    padding-right:2px;
+    margin-top: 11px;
+}
+
+.borderBox-btm{
+    height: 168px;
+    text-align: left;
+}
+.borderBox-btm img{
+    width: 110px;
+    height: 85px;
+    float: left;
+    margin-right: 7px ;
+}
+
+.borderBnone{
+    border:0;
+}
+
+
+#minute1 a{
+    color: black;
+}
+#minute2{
+    border: 0;
+}
+#minute2 a{
+    color: black;
+}
+
+
+#xueY{
+    border:0;
+    width: 100%;
+}
+#xueY .col-md-3 img{
+    width: 80%;
+    display: block;
+    margin:10px auto;
+}
+
+
+#footerTop{
+    background: red;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+}
+#footerTop ul{
+    display: inline-block;
+}
+#footerTop li{
+    display: inline-block;
+    padding: 0 21px;
+}
+#footerTop a{
+    color: white;
+}
+
+#footerBtm{
+    text-align: center;
+    height:97px;
+    background: #e6eaf6;
+}
+#footerBtm div{
+    margin-top: 31px;
+}

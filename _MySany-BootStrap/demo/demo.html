@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>demo1 canvas</title>
+    <script>
+        window.onload = function () {
+            canvasOne();
+            canvasTwo(); //线条
+            canvasFive(); //曲线
+        };
+        function  canvasOne(){
+            var Mycanvas = document.getElementById("canvas-one");
+            //使用id来寻找canvas元素
+            var canvasContent = Mycanvas.getContext("2d");
+            //创建canvas的context对象，getContext("2d")对象是JS内建的HTML5对象，唯一的合法值为"2d"，二维绘图
+            canvasContent.fillStyle = "red";
+            canvasContent.fillRect(100,100,100,100);
+            //建立一个红色的矩形，基点为左上角，前2个参数为x轴与y轴的坐标；，后2个参数为长和宽的值
+        }//红色的矩形
+        function canvasTwo(){
+            var Mycanvas = document.getElementById("canvas-two");
+            var canvasContent = Mycanvas.getContext("2d");
+
+            canvasContent.moveTo(0,0);
+            canvasContent.lineTo(300,300);
+            canvasContent.lineWidth = 10;
+            // 通用属性，宽度
+            canvasContent.stroke();
+        }//线条
+
+        function canvasThree() {
+            var Mycanvas = document.getElementById("canvas-three");
+            var canvasContent = Mycanvas.getContext("2d");
+
+            canvasContent.beginPath();
+            canvasContent.arc(90,50,40,0,2*Math.PI,true);
+            canvasContent.stroke();
+        }//圆
+        function canvasFive(){
+            var Mycanvas = document.getElementById("canvas-five");
+            var canvasContent = Mycanvas.getContext("2d");
+
+            console.log(canvasContent);
+            canvasContent.beginPath();
+            canvasContent.moveTo(0,150);
+            canvasContent.quadraticCurveTo(150,0,300,150);
+            //前2个参数是控制点，后2个参数是结束点
+            canvasContent.lineWidth = 10;
+            canvasContent.strokeStyle = "green";
+            canvasContent.stroke();
+        }//曲线
+    </script>
+</head>
+<body>
+    <canvas id="canvas-one" width="300px" height="300px" style="border: 1px solid saddlebrown">
+        您的浏览器不支持CANVAS
+    </canvas>
+    <!--canvas是一个矩形区域，包含2个属性width和height，分别表示canvas的宽和高，通过css设定，默认值为300px和150px；
+    注意： 1 为canvas设置id属性是便于js调用
+           2 第二行是当浏览器不支持canvas标签时，会显示的文字-->
+
+    <canvas id="canvas-two" width="300px" height="300px" style="border: 1px solid red">
+        您的浏览器不支持CANVAS
+    </canvas>
+
+    <canvas id="canvas-three" width="300px" height="300px" style="border: 1px solid green">
+        您的浏览器不支持CANVAS
+    </canvas>
+
+    <canvas id="canvas-five" width="300px" height="300px" style="border: 1px solid blue">
+        您的浏览器不支持CANVAS
+    </canvas>
+
+
+
+
+
+
+
+
+
+
+
+    <!--<div style="display: inline-block;border:1px solid blue;background: darkred;width: 100px;height: 100px;"></div>-->
+</body>
+</html>

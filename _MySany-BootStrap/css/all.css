@@ -1,0 +1,38 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, menu, nav, section{
+    margin:0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 微软雅黑;
+}
+.cheng{
+    width: 100%;
+    height:500px;
+}
+.clear {
+    zoom:1;
+}
+.clear:after {
+    clear:both;
+    content:'';
+    display:block;
+    height: 0;
+    visibility:hidden;
+}
+img{
+    border: 0;
+}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+     margin-left:0;
+}
+.navbar-nav {
+    margin: 0 0 0 36px;
+}
+.main-section{
+    margin-bottom: 7px;
+}
+.cum1{
+    line-height: 25px;
+}

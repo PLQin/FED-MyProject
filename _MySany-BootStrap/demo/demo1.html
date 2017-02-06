@@ -1,0 +1,46 @@
+<html>
+<HEAD>
+    <meta charset="utf-8">
+</HEAD>
+
+<BODY>
+<DIV id=gg style="OVERFLOW: hidden; WIDTH: 210px;  HEIGHT: 120px">
+    <DIV id=gg1>
+        <TABLE height=15 cellSpacing=0 cellPadding=0 width=210 align=center border=0>
+            <TBODY>
+            <TR>
+                <TD>
+                    我在等一分钟<BR>或许下一分钟<BR>看到你闪躲的眼<BR>我不会让伤心的泪挂满你的脸<BR>我在等一分钟<BR>或许下一分钟<BR>能够感觉你也心痛
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </TD>
+            </TR>
+            </TBODY>
+        </TABLE>
+    </DIV>
+    <DIV id=gg2>
+        <TABLE height=15 cellSpacing=0 cellPadding=0 width=210 align=center border=0>
+            <TBODY>
+            <TR>
+                <TD>我在等一分钟<BR>或许下一分钟<BR>看到你闪躲的眼<BR>我不会让伤心的泪挂满你的脸<BR>我在等一分钟<BR>或许下一分钟<BR>能够感觉你也心痛</TD></TR></TBODY></TABLE></DIV>
+</DIV>
+<SCRIPT type=text/javascript>
+    gg2.innerHTML=gg1.innerHTML;
+    function Marquee(){
+        if(gg2.offsetTop-gg.scrollTop<=0)
+            gg.scrollTop-=gg1.offsetHeight;
+        else{
+            gg.scrollTop++
+        }
+    }
+    var MyMar=setInterval(Marquee,45);
+    gg.onmouseover=function() {
+        clearInterval(MyMar)
+    };
+    gg.onmouseout=function() {
+        MyMar=setInterval(Marquee,45)
+    }
+</SCRIPT>
+</BODY></html>

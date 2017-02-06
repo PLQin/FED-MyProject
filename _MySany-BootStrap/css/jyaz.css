@@ -1,0 +1,98 @@
+section{
+    width: 100%;
+}
+.img1{
+    width:100%;
+    height:100px;
+    background: url("../images/jyaz-left-top-.gif") no-repeat;
+}
+.img2{
+    width:100%;
+    height:100px;
+    background: url("../images/cx-bt_03.gif") no-repeat;
+    margin:31px 0 0 -2px;
+}
+.img1_btm{
+    width:188px;
+    height: 257px;
+    border: 1px solid #dae1ed;
+    border-top:none;
+    padding: 0 10px;
+    line-height: 40px;
+}
+.img1_btm li{
+    height: 40px;
+    border-bottom:1px solid #dae1ed;
+}
+.img1_btm ul li a{
+    /*color: red;*/
+}
+
+.img1_btm-right1{
+    width: 100%;
+    height:36px;
+    line-height: 36px;
+    border-bottom: 1px solid #dae1ed;
+}
+.img1_btm-right1 span{
+    color: #6599dd;
+}
+.img1_btm-right1 i{
+    float: right;
+}
+
+
+.img1_btm-right2{
+    padding:20px 0;
+}
+.img1_btm-right2 ul{
+    padding: 0 20px;
+}
+.img1_btm-right2 li{
+    height: 31px;
+    line-height: 31px;
+    border-bottom: 1px dashed #dae1ed;
+}
+.img1_btm-right2 em{
+    width:0;
+    height:0;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-left:5px solid black;
+    display: inline-block;
+    /*position: absolute;
+    top: 0;
+    left:0;*/
+}
+.img1_btm-right2 i{
+    float: right;
+}
+.img1_btm-right2 a{
+    color: #337ab7;
+}
+.img1_btm-right2 a:hover{
+    color: red;
+}
+footer{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
